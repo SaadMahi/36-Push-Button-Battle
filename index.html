@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push Buttont</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    .container,
+    .big-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      background: #6592cf;
+      height: 100vh;
+    }
+
+    .rectangle {
+      width: 300px;
+      height: 150px;
+
+      background: #243d83;
+      position: absolute;
+
+      z-index: -1;
+    }
+
+    .big-circle {
+      width: 250px;
+      height: 250px;
+      background: #6592cf;
+
+      border-radius: 50%;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      background: #eeb850;
+
+      border-radius: 50%;
+      border: #243d83 50px solid;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="rectangle"></div>
+      <div class="big-circle">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>
